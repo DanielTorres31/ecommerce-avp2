@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="app/css/style.css" />
 
 </head>
 
-<body>
+<body ng-app="ecommerce">
     <nav>
         <div class="nav-wrapper blue lighten-1">
             <a href="index.html" class="brand-logo"><img id="logo" src="app/img/logo.png"><img></a>
@@ -25,7 +22,7 @@
         </div>
     </nav>
     <main>
-
+        <ng-view></ng-view>
     </main>
 
     <footer class="page-footer blue">
@@ -44,6 +41,8 @@
     <!-- Angular JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <script type="text/javascript" src="app/js/controller.js"></script>
 </body>
 
 </html>
